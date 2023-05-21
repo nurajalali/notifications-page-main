@@ -1,0 +1,30 @@
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.navBar {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.navBar__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contentWrapper {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.notif {
+  background-color: red;
+}
+
+.read {
+  background-color: blue;
+}
