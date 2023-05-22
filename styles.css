@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Handlee&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@500;800&display=swap");
 
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
 body {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -10,14 +22,14 @@ body {
 }
 
 .wrapper {
-  background-color: hsl(0, 0%, 100%);
-  width: 50vw;
+  background-color: var(--White);
+  width: 40vw;
   padding: 3rem;
   padding-bottom: 0;
 }
 
 .navBar {
-  width: 50vw;
+  width: 40vw;
   margin: 0 auto;
 }
 
@@ -34,14 +46,28 @@ body {
   font-weight: 800;
 }
 
+.info__counter {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: var(--Blue);
+  color: var(--White);
+}
+
 .navBar__second__element {
   font-size: 1.5rem;
   color: hsl(219, 12%, 42%);
 }
 
 .contentWrapper {
-  width: 50vw;
+  width: 40vw;
   margin: 0 auto;
+}
+
+a {
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--Blue);
 }
 
 .notif__item {
@@ -50,13 +76,46 @@ body {
   align-items: center;
   gap: 2rem;
   margin: 2rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
-/* .notif {
-  background-color: red;
+.notif__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2;
+  width: 100%;
+}
+.notif__name {
+  font-weight: 800;
 }
 
-.read {
-  background-color: blue;
-} */
+.notif__highlight {
+  color: var(--Dark-grayish-blue);
+}
+
+.notif__bold {
+  color: var(--Dark-grayish-blue);
+  font-weight: 800;
+}
+
+.notif__minutes {
+  color: var(--Grayish-blue);
+}
+
+.notif__bold__content {
+  color: var(--Dark-grayish-blue);
+  border: 1px solid var(--Grayish-blue);
+  padding: 1rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.unread {
+  background-color: var(--Very-light-grayish-blue);
+}
+.unread .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 64px;
+  background-color: var(--Red);
+  display: inline-block;
+}

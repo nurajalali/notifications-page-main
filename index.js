@@ -9,7 +9,7 @@ elements.forEach((e) =>
     (event) => {
       read -= 1;
       document.getElementById("reads").innerText = read;
-      event.target.classList.add("read");
+      event.currentTarget.classList.remove("unread");
     },
     { once: true }
   )
